@@ -1,0 +1,100 @@
+*{
+    margin : 0;
+    padding:  0;
+    text-decoration: none;
+}
+body{
+    background-color: teal;
+}
+#formWrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#messageBox{
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    width: 30%;
+    visibility: hidden;
+    padding:10px;
+    text-align: center;
+}
+.warning{
+    visibility: visible !important;
+    background-color: yellow !important;
+    color:black !important;
+    font-weight: bold;
+}
+.success{
+    background-color: green !important;
+    visibility: visible !important;
+    color: White !important;
+    font-weight: bold;
+}
+.hide{
+    visibility: hidden !important;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px white , -2px -2px 2px white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+
+#username , #password , #loginButton , #signupButton , #cPassword{
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#loginButton , #signupButton{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span{
+    text-align: center;
+    color:white;
+}
+
+span a{
+    color : white;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:1025px){
+    #form , #messageBox{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:770px){
+    #form , #messageBox{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:426px){
+    #form , #messageBox{
+        width: 90%;
+    }
+}

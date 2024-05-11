@@ -1,0 +1,420 @@
+
+/* universal css selector. this style is applied on every element of html */
+
+*{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+/* setting brandcolor variable. if we do change in its color then it will affect all placed where we used this variable  */
+
+:root{
+    --brandColor : #CE2026;
+}
+
+/* <a> tag universal style */
+
+a {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+/* <div> tag universal style */
+div{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* desktop header design section  */
+
+.desktopHeader{
+    position: sticky;
+    top: 0;
+    display: flex; 
+    align-items: center !important;
+    padding: 5px 0px 5px 0px;
+    justify-content: space-around;
+    box-shadow: 3px 3px 3px #00000050 ;
+    z-index: 100 !important;
+    background-color: teal;
+}
+.desktopHeader a {
+    color:white;
+}
+.homeLink{
+    display: flex;
+    align-items: center;
+}
+.homeLink .siteName{
+font-weight: bold;
+}
+
+.fa-bars{
+    font-size: 30px;
+    margin-right: 20px;
+    display: none;
+    cursor: pointer;
+    color:white;
+}
+
+.desktopHeader .logoBox .logoImage{
+    height: 60px;
+    width: auto;
+    object-fit: cover;
+}
+
+.desktopHeader .navBarLink{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+ column-gap: 20px;
+ align-items: center;
+ justify-content: center;   
+ margin-right: 20px;
+}
+
+
+/* end of desktop header design */
+
+/* mobile menu (side menu design) */
+
+.mobileMenuOuterBox{
+    height: 100%;
+    width: 100%;
+    background-color: #00000050;
+    position: fixed;
+    margin-left: 100%;
+    transition: all 0.3s;
+    z-index: 10;
+
+}
+
+.leftMenu{
+    background-color: teal;
+    height: 100%;
+    width: 50%;
+    float: right;
+    box-shadow: 0px 0px 5px 5px #00000050;
+    z-index: 1000;
+    
+}
+.leftMenu ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-top: 20px;
+
+    
+}
+
+.leftMenu ul li a{
+    color :white;
+}
+
+/* end of side menu design */
+
+/* body section design of index page */
+
+#success , #failure{
+    display: none;
+    position: fixed;
+}
+.mainImage{
+    margin-top: 5px;
+    height: 500px;
+    background-image: url("../images/mainImg.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-position-x: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blackShadowBox{
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    background-color: #00000099;
+    ;
+}
+
+.Slogan {
+    font-size: 50px;
+    color: white;
+    z-index: 1;
+    padding-top:5px;
+}
+
+.info{
+    color:white;
+    z-index: 1;
+    width:auto;
+    width: 60%;
+    text-align: center;
+    padding:5px;
+}
+
+
+/* services section of index page  */
+
+.services{
+    background-color: #CE2026;
+    width: 100%;
+    padding:30px;
+    color:wheat;
+}
+
+
+.services .box2{
+   
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+.services .box p{
+    font-size: 14px;
+}
+
+/* visit us section design of index page  */
+
+.visitUs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.visitImage{
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.visitUs h3{
+    font-weight: bold;
+}
+
+.bookButton{
+    background-color: var(--brandColor);
+    color:white;
+    border:none;
+    outline: none;
+    padding:10px 20px 10px 20px;
+
+}
+
+.bookButton a {
+    color : white;
+}
+
+/* offering section design of index page */
+
+.offeringSection {
+    text-align: center;
+    background-color: lightgray;
+}
+
+.offeringSection .box{
+    display: flex;
+  
+    flex-direction: column;
+    
+    justify-content: center;
+
+}
+
+.offeringSection .box i {
+    color : var(--brandColor);
+    font-size: 40px;
+    
+}
+
+/* brand car design section of index page  */
+
+
+.brandCars img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* footer design section of all pages  */
+
+.footer{
+    background-color: black;
+    color: white;
+    padding:20px;
+}
+
+
+
+
+
+/* registration page design  */
+
+.registrationBody{
+    background-image: url("../images/registration1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:darken;
+    background-attachment: fixed;
+}
+
+.registrationBody label , h4{
+    color :white;
+}
+
+.registrationBody .registrationForm{
+    background-color:var(--brandColor);
+    padding:30px;
+    border-radius: 10px;
+}
+
+
+/* end of registration page design  */
+
+
+/* seller page design section  */
+
+.sellerPage{
+    height: 90vh;
+    background-image: url("../images/loginImage.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.sellerPage .row{
+    padding-top: 150px;
+}
+
+.sellerPage .loginForm{
+    background-color: var(--brandColor);
+    width: 100%;
+    color: white;
+}
+
+/* end of seller page design  */
+
+/* car search page design section  */
+
+.carlist .card{
+    cursor: pointer;
+}
+
+.carlist img{
+    height: 200px;
+    width: 100%;
+}
+
+/* end of car search page  */
+
+/* about us design section  */
+
+.aboutUs img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.staffSection img {
+    height: 150px;
+    object-fit:contain;
+    object-position: top;
+}
+
+/* end of about us page design  */
+
+
+/* media query section */
+
+/* media query activates when screen width is 1030px */
+@media only screen and (max-width:1030px) {
+    .mainImage{
+        height: 350px;
+    }
+    .info{
+        width: 95% ;
+        font-size: 14px;
+    }
+}
+/* media query activates when screen width is 770px */
+@media only screen and (max-width:770px) {
+    .mainImage{
+        height: 300px;
+    }
+    .Slogan{
+        font-size: 20px !important;
+    }
+    .info{
+        width: 100% ;
+        font-size: 12px;
+    }
+    .services .box2{
+   
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;   
+        border-right: none ;
+        border-left: none;
+        
+    }
+
+    .brandCars img{
+        width: 100%;
+    }
+}
+
+
+/* media query activates when screen width is 700px */
+@media only screen and (max-width:700px) {
+    .fa-bars{
+        display: block !important;
+    }
+    .navBarLink{
+        display: none !important;
+    }
+    .desktopHeader{
+        justify-content: space-between;
+    }
+    .info{
+        width: 100% ;
+    }
+  }
+
+
+  /* media query activates when screen width is 380px */
+  @media only screen and (max-width:380px) {
+    .mainImage{
+        height: 300px;
+    }
+    .Slogan{
+        font-size: 16px !important;
+    }
+    .info{
+        width: 100% ;
+        font-size: 11px;
+        padding-top: 10px;
+    }
+    .services .box2{
+   
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;   
+        border-right: none ;
+        border-left: none;
+        
+    }
+}
